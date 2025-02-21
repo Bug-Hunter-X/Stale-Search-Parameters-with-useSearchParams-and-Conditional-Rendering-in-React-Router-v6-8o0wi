@@ -1,0 +1,1 @@
+This repository demonstrates a subtle bug in React Router v6's `useSearchParams` hook when used within conditionally rendered components.  The problem arises when a component using `useSearchParams` unmounts and remounts, resulting in the hook holding onto stale search parameter values. The solution involves resetting the hook's state on unmount.
